@@ -3,8 +3,12 @@
   <title> Johann's blog</title>
 </head>
 <body>
-  <h1><a href="http://br.op.gg/summoner/userName=delong"><strong>Delon só feeda</strong></a>
-<p>1.75 de kda</p>
+  <h1><a href="http://br.op.gg/summoner/userName=delong"><strong>Linktest</strong></a>
+<p> {%for post in posts%}
+  <p>published: {{ post.created_date }}</p>
+       <h1><a href="">{{ post.title }}</a></h1>
+       <p>{{ post.text|linebreaksbr }}</p>
+{% endfor %}</p>
 <p> 29%winrate</p>
 </body>
 </html>
